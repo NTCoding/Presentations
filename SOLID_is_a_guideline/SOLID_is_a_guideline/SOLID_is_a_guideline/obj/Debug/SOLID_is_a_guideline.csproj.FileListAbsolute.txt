@@ -1,0 +1,4 @@
+C:\Users\Administrator\Dropbox\Presentations\SOLID_is_a_guideline\SOLID_is_a_guideline\SOLID_is_a_guideline\bin\Debug\SOLID_is_a_guideline.dll
+C:\Users\Administrator\Dropbox\Presentations\SOLID_is_a_guideline\SOLID_is_a_guideline\SOLID_is_a_guideline\bin\Debug\SOLID_is_a_guideline.pdb
+C:\Users\Administrator\Dropbox\Presentations\SOLID_is_a_guideline\SOLID_is_a_guideline\SOLID_is_a_guideline\obj\Debug\SOLID_is_a_guideline.dll
+C:\Users\Administrator\Dropbox\Presentations\SOLID_is_a_guideline\SOLID_is_a_guideline\SOLID_is_a_guideline\obj\Debug\SOLID_is_a_guideline.pdb
