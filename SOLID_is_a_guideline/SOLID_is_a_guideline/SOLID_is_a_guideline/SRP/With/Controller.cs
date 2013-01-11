@@ -20,74 +20,74 @@ namespace SOLID_is_a_guideline.SRP.With
 
 	public class Controller
 	{
-		private readonly ICarsRepository carsRepository;
-		private readonly ICarsMapper carsMapper;
+		private readonly IPaymentsRepository paymentsRepository;
+		private readonly IPaymentsMapper paymentsMapper;
 
-		public Controller(ICarsRepository carsRepository, ICarsMapper carsMapper)
+		public Controller(IPaymentsRepository paymentsRepository, IPaymentsMapper paymentsMapper)
 		{
-			this.carsRepository = carsRepository;
-			this.carsMapper = carsMapper;
+			this.paymentsRepository = paymentsRepository;
+			this.paymentsMapper = paymentsMapper;
 		}
 
-		public CarsViewModel Get(CarsRequestModel requestModel)
+		public PaymentViewModel Get(PaymentsRequest request)
 		{
-			var cars = carsRepository.GetCars(requestModel.MinPrice, requestModel.MaxPrice, requestModel.PageSize);
-			var model = new CarsViewModel();
-			carsMapper.Map(cars, model);
+			var payments = paymentsRepository.GetPayments(request.MinPrice, request.MaxPrice, request.PageSize);
+			var model = new PaymentViewModel();
+			paymentsMapper.Map(payments, model);
 
 			return model;
 		}
 	}
 
-	public interface ICarsRepository
+	public interface IPaymentsRepository
 	{
-		IQueryable<Car> GetCars(int minPrice, int maxPrice, int pageSize);
+		IQueryable<Payment> GetPayments(int minPrice, int maxPrice, int pageSize);
 	}
 
-	public class CarsRepository : ICarsRepository
+	public class PaymentsRepository : IPaymentsRepository
 	{
 		private readonly IDocumentSession session;
 
-		public CarsRepository(IDocumentSession session)
+		public PaymentsRepository(IDocumentSession session)
 		{
 			this.session = session;
 		}
 
-		public IQueryable<Car> GetCars(int minPrice, int maxPrice, int pageSize)
+		public IQueryable<Payment> GetPayments(int minPrice, int maxPrice, int pageSize)
 		{
 			return session
-				.Query<Car>()
+				.Query<Payment>()
 				.Where(c => c.Price < minPrice)
 				.Where(c => c.Price > maxPrice)
 				.Take(pageSize);
 		}
 	}
 
-	public interface ICarsMapper
+	public interface IPaymentsMapper
 	{
-		void Map(IEnumerable<Car> cars, CarsViewModel model);
+		void Map(IEnumerable<Payment> payments, PaymentViewModel model);
 	}
 
-	public class CarsMapper : ICarsMapper
+	public class PaymentsMapper : IPaymentsMapper
 	{
-		public void Map(IEnumerable<Car> cars, CarsViewModel model)
+		public void Map(IEnumerable<Payment> payments, PaymentViewModel model)
 		{
-			var carDtos = new List<ShowCarDto>();
+			var dtos = new List<PaymentDto>();
 
-			foreach (var car in cars)
+			foreach (var p in payments)
 			{
-				var dto = new ShowCarDto
+				var dto = new PaymentDto
 				{
-					Model = car.Model,
-					Manufacturer = car.Manufacturer,
-					Price = car.Price,
-					NumberOfDoors = car.NumberOfDoors
+					Model = p.Model,
+					Manufacturer = p.Manufacturer,
+					Price = p.Price,
+					NumberOfDoors = p.NumberOfDoors
 				};
 
-				carDtos.Add(dto);
+				dtos.Add(dto);
 			}
 
-			model.Cars = carDtos;
+			model.Payments = dtos;
 		}
 	}
 }

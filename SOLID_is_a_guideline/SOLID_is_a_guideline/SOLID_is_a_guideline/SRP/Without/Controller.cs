@@ -14,42 +14,42 @@ namespace SOLID_is_a_guideline.SRP.Without
 			this.session = session;
 		}
 
-		public CarsViewModel Get(CarsRequestModel requestModel)
+		public PaymentViewModel Get(PaymentsRequest request)
 		{
-			var cars = GetCars(requestModel);
-			var model = new CarsViewModel();
-			Map(cars, model);
+			var payments = GetPayments(request);
+			var model = new PaymentViewModel();
+			Map(payments, model);
 
 			return model;
 		}
 
-		private IQueryable<Car> GetCars(CarsRequestModel requestModel)
+		private IQueryable<Payment> GetPayments(PaymentsRequest request)
 		{
 			return session
-				.Query<Car>()
-				.Where(c => c.Price < requestModel.MinPrice)
-				.Where(c => c.Price > requestModel.MaxPrice)
-				.Take(requestModel.PageSize);
+				.Query<Payment>()
+				.Where(c => c.Price < request.MinPrice)
+				.Where(c => c.Price > request.MaxPrice)
+				.Take(request.PageSize);
 		}
 
-		private void Map(IEnumerable<Car> cars, CarsViewModel model)
+		private void Map(IEnumerable<Payment> payments, PaymentViewModel model)
 		{
-			var carDtos = new List<ShowCarDto>();
+			var dtos = new List<PaymentDto>();
 
-			foreach (var car in cars)
+			foreach (var p in payments)
 			{
-				var dto = new ShowCarDto
+				var dto = new PaymentDto
 					          {
-						          Model = car.Model,
-						          Manufacturer = car.Manufacturer,
-						          Price = car.Price,
-						          NumberOfDoors = car.NumberOfDoors
+						          Model = p.Model,
+						          Manufacturer = p.Manufacturer,
+						          Price = p.Price,
+						          NumberOfDoors = p.NumberOfDoors
 					          };
 
-				carDtos.Add(dto);
+				dtos.Add(dto);
 			}
 
-			model.Cars = carDtos;
+			model.Payments = dtos;
 		}
 	}
 }

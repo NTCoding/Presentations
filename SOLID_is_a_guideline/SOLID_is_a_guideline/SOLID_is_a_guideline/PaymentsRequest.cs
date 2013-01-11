@@ -1,6 +1,6 @@
 namespace SOLID_is_a_guideline
 {
-	public class CarsRequestModel
+	public class PaymentsRequestModel
 	{
 		public int MinPrice { get; set; }
 

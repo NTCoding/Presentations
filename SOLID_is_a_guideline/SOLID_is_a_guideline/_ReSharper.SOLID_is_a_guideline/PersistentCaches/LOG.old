@@ -1,1 +1,5 @@
-2013/01/06-09:52:07.431 90c Delete type=3 #1
+2013/01/06-10:13:51.597 1ec4 Recovering log #3
+2013/01/06-10:13:51.597 1ec4 Level-0 table #5: started
+2013/01/06-10:13:51.603 1ec4 Level-0 table #5: 9103 bytes OK
+2013/01/06-10:13:51.608 1ec4 Delete type=0 #3
+2013/01/06-10:13:51.609 1ec4 Delete type=3 #2
