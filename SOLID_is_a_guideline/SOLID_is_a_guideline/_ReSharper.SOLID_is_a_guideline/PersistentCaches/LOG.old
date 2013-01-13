@@ -1,5 +1,5 @@
-2013/01/06-10:13:51.597 1ec4 Recovering log #3
-2013/01/06-10:13:51.597 1ec4 Level-0 table #5: started
-2013/01/06-10:13:51.603 1ec4 Level-0 table #5: 9103 bytes OK
-2013/01/06-10:13:51.608 1ec4 Delete type=0 #3
-2013/01/06-10:13:51.609 1ec4 Delete type=3 #2
+2013/01/11-19:02:28.783 cdc Recovering log #6
+2013/01/11-19:02:28.787 cdc Level-0 table #8: started
+2013/01/11-19:02:28.800 cdc Level-0 table #8: 13373 bytes OK
+2013/01/11-19:02:28.870 cdc Delete type=0 #6
+2013/01/11-19:02:28.872 cdc Delete type=3 #4

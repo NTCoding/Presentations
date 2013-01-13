@@ -1,6 +1,6 @@
 namespace SOLID_is_a_guideline
 {
-	public class PaymentsRequestModel
+	public class PaymentsRequest
 	{
 		public int MinPrice { get; set; }
 

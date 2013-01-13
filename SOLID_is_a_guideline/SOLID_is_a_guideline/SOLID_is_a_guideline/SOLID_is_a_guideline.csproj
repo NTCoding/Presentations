@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="CarsRequestModel.cs" />
-    <Compile Include="CarsViewModel.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="PaymentsRequest.cs" />
+    <Compile Include="PaymentViewModel.cs" />
     <Compile Include="CartItem.cs" />
     <Compile Include="Db.cs" />
     <Compile Include="IDocumentSession.cs" />
@@ -54,7 +54,7 @@
     <Compile Include="OCP\Without\BasketV2.cs" />
     <Compile Include="OCP\With\BasketV1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShowCarDto.cs" />
+    <Compile Include="PaymentDto.cs" />
     <Compile Include="SRP\Without\Controller.cs" />
     <Compile Include="SRP\Without\UserService.cs" />
     <Compile Include="SRP\With\Controller.cs" />
