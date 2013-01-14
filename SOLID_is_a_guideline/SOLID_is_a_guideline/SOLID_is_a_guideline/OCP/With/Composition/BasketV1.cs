@@ -1,4 +1,4 @@
-﻿namespace SOLID_is_a_guideline.OCP.With
+﻿namespace SOLID_is_a_guideline.OCP.With.Composition
 {
 	// now we are open for extension
 	// and we are closed for modification
