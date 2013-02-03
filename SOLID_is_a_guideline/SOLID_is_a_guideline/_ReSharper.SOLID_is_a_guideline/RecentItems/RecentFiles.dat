@@ -2,25 +2,27 @@
   <RecentFiles>
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:Without/f:UserService.cs" caret="199" fromTop="5" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/f:CartItem.cs" caret="85" fromTop="4" />
-    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:With/f:BasketV1.cs" caret="879" fromTop="28" />
-    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:Without/f:BasketV2.cs" caret="665" fromTop="26" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:Without/f:BasketV1.cs" caret="760" fromTop="31" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:ISP/d:Without/f:IEmailSender.cs" caret="1173" fromTop="42" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:ISP/d:With/f:EmailSenders.cs" caret="588" fromTop="6" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:With/f:Controller.cs" caret="1289" fromTop="0" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:With/f:UserService.cs" caret="0" fromTop="0" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:Without/f:Controller.cs" caret="1193" fromTop="46" />
+    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:With/d:Composition/f:BasketV1.cs" caret="24" fromTop="0" />
+    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:Without/f:BasketV2.cs" caret="0" fromTop="0" />
+    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:With/d:Inheritance/f:Basket.cs" caret="480" fromTop="13" />
   </RecentFiles>
   <RecentEdits>
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:Without/f:UserService.cs" caret="201" fromTop="6" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:With/f:UserService.cs" caret="843" fromTop="0" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/f:CartItem.cs" caret="80" fromTop="4" />
-    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:With/f:BasketV1.cs" caret="547" fromTop="14" />
-    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:Without/f:BasketV2.cs" caret="447" fromTop="11" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:Without/f:BasketV1.cs" caret="765" fromTop="31" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:ISP/d:Without/f:IEmailSender.cs" caret="1099" fromTop="27" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:ISP/d:With/f:EmailSenders.cs" caret="306" fromTop="12" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:With/f:Controller.cs" caret="1118" fromTop="24" />
     <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:SRP/d:Without/f:Controller.cs" caret="947" fromTop="23" />
+    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:With/d:Composition/f:BasketV1.cs" caret="24" fromTop="0" />
+    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:Without/f:BasketV2.cs" caret="0" fromTop="0" />
+    <File id="C643E16E-494C-4D50-887D-8F7329F5753D/d:OCP/d:With/d:Inheritance/f:Basket.cs" caret="524" fromTop="14" />
   </RecentEdits>
 </RecentFiles>

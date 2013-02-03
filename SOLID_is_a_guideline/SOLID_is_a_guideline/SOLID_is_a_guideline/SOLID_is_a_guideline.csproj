@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OCP\With\Inheritance\Basket.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="PaymentsRequest.cs" />
     <Compile Include="PaymentViewModel.cs" />
@@ -52,7 +53,7 @@
     <Compile Include="LifeLessonGroup.cs" />
     <Compile Include="OCP\Without\BasketV1.cs" />
     <Compile Include="OCP\Without\BasketV2.cs" />
-    <Compile Include="OCP\With\BasketV1.cs" />
+    <Compile Include="OCP\With\Composition\BasketV1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PaymentDto.cs" />
     <Compile Include="SRP\Without\Controller.cs" />
